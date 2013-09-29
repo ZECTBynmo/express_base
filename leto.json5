@@ -2,17 +2,20 @@
     "version": "0.0.0",                                                   
     "github": {                                                           
         "user": "ZECTBynmo",                                              
-        "repo": ""
+        "repo": "express_base"
     }, 
 
     "procedure": [
-        {   "title": "",
+        {   "title": "Replace some text",
             "type": "replace",
 
             "keywords": {
                 "main_heading": "Main Heading String",
-                "drop_area_text": "Drop area text",
             }
         },
-    ]
+    ],
+
+    "defaults": { 
+        "main_heading": "Main Heading"
+    }
 }
