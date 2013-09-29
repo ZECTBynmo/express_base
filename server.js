@@ -4,7 +4,7 @@ var express = require('express'),
     http = require('http'),
     io = require('socket.io'),
     LocalTunnel = require('localtunnel-wrapper'),
-    router = require('./routes/router');
+    router = require('./routes/routes');
 
 var app = express();
 
@@ -19,5 +19,3 @@ app.configure( function() {
 var server = http.createServer(app).listen(app.get('port'), function () {
     console.log( "Express server listening on port " + app.get('port') );
 });
-
-//require("connect").createServer( require("connect").static(__dirname) ).listen(config.port);
