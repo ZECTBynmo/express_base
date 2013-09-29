@@ -1,6 +1,6 @@
 var AppRouter = Backbone.Router.extend({
 
-    routes: { // leto-marker-main-rout-list
+    routes: { // leto-marker-main-route-list
         ""                      : "home",
         "about"                 : "about"
     },
@@ -10,6 +10,7 @@ var AppRouter = Backbone.Router.extend({
         $('.header').html(this.headerView.el);
     },
 
+    // leto-marker-router-functions
     home: function (id) {
         if (!this.homeView) {
             this.homeView = new HomeView();
