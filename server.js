@@ -4,7 +4,7 @@ var express = require('express'),
     http = require('http'),
     io = require('socket.io'),
     LocalTunnel = require('localtunnel-wrapper'),
-    router = require('./routes/routes');
+    router = require(__dirname + '/routes/router');
 
 var app = express();
 
@@ -13,6 +13,8 @@ app.configure( function() {
     app.use( express.logger('dev') );  /* 'default', 'short', 'tiny', 'dev' */
     app.use( express.bodyParser() ),
     app.use( express.static(path.join(__dirname, 'public')) );
+
+    // leto-marker-server-routes
 });
 
 // Create our server

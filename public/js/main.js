@@ -29,7 +29,13 @@ var AppRouter = Backbone.Router.extend({
 
 });
 
-utils.loadTemplate(['HomeView', 'HeaderView', 'AboutView'], function() {
+var templateFiles = [ // leto-marker-html-template-list
+    'HomeView', 
+    'HeaderView', 
+    'AboutView',
+];
+
+utils.loadTemplate( templateFiles, function() {
     app = new AppRouter();
     Backbone.history.start();
 });
