@@ -3,7 +3,6 @@ var express = require('express'),
     path = require('path'),
     http = require('http'),
     io = require('socket.io'),
-    LocalTunnel = require('localtunnel-wrapper'),
     router = require(__dirname + '/routes/router');
 
 var app = express();
