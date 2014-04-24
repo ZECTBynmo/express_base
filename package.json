@@ -1,0 +1,23 @@
+{
+  "name": "express_base",
+  "version": "0.0.0",
+  "description": "Leto template project for a node.js server using express",
+  "main": "config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leto-templates/express_base.git"
+  },
+  "author": "",
+  "license": "BSD",
+  "gitHead": "04145b7ae58f6bff7ab719728cd23f4f73c0d3e6",
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "express": "~3.5.1",
+    "json5": "~0.2.0",
+    "socket.io": "~0.9.16"
+  }
+}
